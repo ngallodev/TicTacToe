@@ -8,6 +8,16 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                PlayTicTacToe();
+                Console.WriteLine("Press any key to play again.");
+                Console.ReadKey();
+            }
+        }
+
+        private static void PlayTicTacToe()
+        {
             string[,] boardArray = new string[3, 3];
             int winner = 0;
             int player = 1;
